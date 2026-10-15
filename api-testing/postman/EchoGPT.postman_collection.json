@@ -1,0 +1,309 @@
+{
+  "info": {
+    "_postman_id": "7b23a15e-7228-495c-931d-96fac987440a",
+    "name": "EchoGPT",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44883923"
+  },
+  "item": [
+    {
+      "name": "aiLiveResponseID1",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7"
+          },
+          {
+            "key": "authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "chrome-extension://negimdcamohmoheiifgecbjgjepkcfhj"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "none"
+          },
+          {
+            "key": "sec-fetch-storage-access",
+            "value": "active"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "_ga=GA1.1.2083246859.1790265763; _fbp=fb.1.1790265763840.149290703338282406; EchoGPT-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY; _ga_Z6FRNCMBFJ=GS2.1.s1790488130$o5$g1$t1790488163$j27$l0$h0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n\"chatId\": \"eb090f72-e323-4a5d-ac55-52a43d6b4e11\",\r\n\"message\": \"\",\r\n\"messageId\": \"msg_1790512896277\",\r\n\"model\": \"echogpt\",\r\n\"stream\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.echogpt.live/v1/chat/generate",
+          "protocol": "https",
+          "host": [
+            "api",
+            "echogpt",
+            "live"
+          ],
+          "path": [
+            "v1",
+            "chat",
+            "generate"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://api.echogpt.live/v1/chat/generate' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7' \\\r\n  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY' \\\r\n  -H 'content-type: application/json' \\\r\n  -b '_ga=GA1.1.2083246859.1790265763; _fbp=fb.1.1790265763840.149290703338282406; EchoGPT-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY; _ga_Z6FRNCMBFJ=GS2.1.s1790488130$o5$g1$t1790488163$j27$l0$h0' \\\r\n  -H 'origin: chrome-extension://negimdcamohmoheiifgecbjgjepkcfhj' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: none' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"messageId\":\"msg_1790512896277\",\"message\":\"what is sqa\",\"chatId\":\"eb090f72-e323-4a5d-ac55-52a43d6b4e11\",\"model\":\"echogpt\",\"stream\":false}'"
+      },
+      "response": []
+    },
+    {
+      "name": "aiLiveResponseID1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.echogpt.live",
+          "protocol": "https",
+          "host": [
+            "api",
+            "echogpt",
+            "live"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "aiLiveResponseID2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7"
+          },
+          {
+            "key": "authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImlkIjoiNjkzY2Y3NzgtOTVjYS1jZDMxLTFlN2UtZTllYjAwMDAwMDAwIiwiZW1haWwiOiJzYWtpYnVyMjc2QGdtYWlsLmNvbSIsImdvb2dsZUlkIjoiMTAxMDUzMTg1ODg1MzA5NzA4Mjk4IiwiZ2l0aHViSWQiOm51bGwsImRpc2Njb3JkSWQiOm51bGwsInVzZXJuYW1lIjpudWxsLCJkaXNwbGF5TmFtZSI6bnVsbCwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0x3TVlsVU5YVGNabTlfMHRBWmUtdzBQSnZ4S210c1lpbU1sM0NpNHVFbkxyZzBFUG1PSUE9czk2LWMiLCJmaXJzdE5hbWUiOiJTYWtpYnVyIiwibGFzdE5hbWUiOiJSYWhtYW4iLCJvYXV0aFByb3ZpZGVycyI6W10sImlzUHJlbWl1bSI6IjAiLCJzdWJzY3JpcHRpb25JZCI6IjAiLCJzdWJzY3JpcHRpb25FeHBpcmF0aW9uRGF0ZSI6bnVsbCwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFXaW5kb3dTdGFydCI6IjIwMjYtMDktMjZUMTM6Mzc6MzAuNTMwWiIsInF1b3RhVXNlZCI6NSwicXVvdGFBZHZhbmNlZFVzZWQiOjAsImNvbXBhcmVXaW5kb3dTdGFydCI6bnVsbCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sInN0YXR1cyI6ImFjdGl2ZSIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMTNUMTE6MTk6NTIuNDc4WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjdUMDY6Mzk6NDAuNTA1WiJ9LCJpYXQiOjE3OTA1MTkwNTgsImV4cCI6MTc5MzExMTA1OH0.J1x0SZlQGdSPlgcgdB7HD5EyCKy7efG2DjhJMciri6c"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "chrome-extension://negimdcamohmoheiifgecbjgjepkcfhj"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "none"
+          },
+          {
+            "key": "sec-fetch-storage-access",
+            "value": "active"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "_ga=GA1.1.2083246859.1790265763; _fbp=fb.1.1790265763840.149290703338282406; EchoGPT-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY; _ga_Z6FRNCMBFJ=GS2.1.s1790488130$o5$g1$t1790488163$j27$l0$h0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"message\": \"What is SQA\",\r\n  \"chatId\": \"4cd612f4-b2d7-43b3-a188-be45678d385d\",\r\n  \"model\": \"echogpt\",\r\n  \"stream\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.echogpt.live/v1/chat/generate",
+          "protocol": "https",
+          "host": [
+            "api",
+            "echogpt",
+            "live"
+          ],
+          "path": [
+            "v1",
+            "chat",
+            "generate"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://api.echogpt.live/v1/chat/generate' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7' \\\r\n  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImlkIjoiNjkzY2Y3NzgtOTVjYS1jZDMxLTFlN2UtZTllYjAwMDAwMDAwIiwiZW1haWwiOiJzYWtpYnVyMjc2QGdtYWlsLmNvbSIsImdvb2dsZUlkIjoiMTAxMDUzMTg1ODg1MzA5NzA4Mjk4IiwiZ2l0aHViSWQiOm51bGwsImRpc2Njb3JkSWQiOm51bGwsInVzZXJuYW1lIjpudWxsLCJkaXNwbGF5TmFtZSI6bnVsbCwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0x3TVlsVU5YVGNabTlfMHRBWmUtdzBQSnZ4S210c1lpbU1sM0NpNHVFbkxyZzBFUG1PSUE9czk2LWMiLCJmaXJzdE5hbWUiOiJTYWtpYnVyIiwibGFzdE5hbWUiOiJSYWhtYW4iLCJvYXV0aFByb3ZpZGVycyI6W10sImlzUHJlbWl1bSI6IjAiLCJzdWJzY3JpcHRpb25JZCI6IjAiLCJzdWJzY3JpcHRpb25FeHBpcmF0aW9uRGF0ZSI6bnVsbCwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFXaW5kb3dTdGFydCI6IjIwMjYtMDktMjZUMTM6Mzc6MzAuNTMwWiIsInF1b3RhVXNlZCI6NSwicXVvdGFBZHZhbmNlZFVzZWQiOjAsImNvbXBhcmVXaW5kb3dTdGFydCI6bnVsbCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sInN0YXR1cyI6ImFjdGl2ZSIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMTNUMTE6MTk6NTIuNDc4WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjdUMDY6Mzk6NDAuNTA1WiJ9LCJpYXQiOjE3OTA1MTkwNTgsImV4cCI6MTc5MzExMTA1OH0.J1x0SZlQGdSPlgcgdB7HD5EyCKy7efG2DjhJMciri6c' \\\r\n  -H 'content-type: application/json' \\\r\n  -b '_ga=GA1.1.2083246859.1790265763; _fbp=fb.1.1790265763840.149290703338282406; EchoGPT-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY; _ga_Z6FRNCMBFJ=GS2.1.s1790488130$o5$g1$t1790488163$j27$l0$h0' \\\r\n  -H 'origin: chrome-extension://negimdcamohmoheiifgecbjgjepkcfhj' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: none' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"messageId\":\"msg_1790519088430\",\"message\":\"What is SQA?\",\"chatId\":\"4cd612f4-b2d7-43b3-a188-be45678d385d\",\"model\":\"echogpt\",\"stream\":false}'"
+      },
+      "response": []
+    },
+    {
+      "name": "aiLiveResponseID3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "*/*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7"
+          },
+          {
+            "key": "authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha2lidXIyMjc2QGdtYWlsLmNvbSIsInN1YiI6eyJpZCI6ImRjZWQyNTM4LTE2MGUtNDA4Ny04ZGMxLWUzYTQ0ODZkZWMwNCIsImVtYWlsIjoic2FraWJ1cjIyNzZAZ21haWwuY29tIiwiZ29vZ2xlSWQiOm51bGwsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInBpY3R1cmUiOm51bGwsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsIm9hdXRoUHJvdmlkZXJzIjpbXSwiaXNQcmVtaXVtIjoiMCIsInN1YnNjcmlwdGlvbklkIjoiMCIsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJzdWJzY3JpcHRpb25TdGF0dXMiOjAsInByZW1pdW1MaW1pdCI6MCwiZnJlZUxpbWl0IjowLCJxdW90YVdpbmRvd1N0YXJ0IjoiMjAyNi0wOS0yN1QwNzoyODozNS44OTVaIiwicXVvdGFVc2VkIjoyLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVdpbmRvd1N0YXJ0IjoiMjAyNi0wOS0yN1QwNjo1OToxNi43NDlaIiwiY29tcGFyZVVzZWQiOjEsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6WyJjaFRXZ2JwRFRTRzZ6RWZwcG5yc09GOkFQQTkxYkduWk55M2VpTEFUQUUybFEwTUFRMDJucVpPY05xaTNxbzRHcmt1MTViLTMwaU9fTTJUM1lxTEdxekI0MUQtNUVGY2pOVjM0cDFTY0Y4SklKWW1LZGdOQjJEWVRUOEdGNFFONWtTV2t6VGZ6NlNDa0NnIl0sInN0YXR1cyI6ImFjdGl2ZSIsImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTU6NTA6MjIuOTcwWiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjdUMDc6Mjg6NDUuNzMyWiJ9LCJpYXQiOjE3OTA1MjA2MjcsImV4cCI6MTc5MzExMjYyN30.kJVkEK5YN_CwT3aBCOIRUivAoly2FLptTRzzYbtWzxw"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "chrome-extension://negimdcamohmoheiifgecbjgjepkcfhj"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "none"
+          },
+          {
+            "key": "sec-fetch-storage-access",
+            "value": "active"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "_ga=GA1.1.2083246859.1790265763; _fbp=fb.1.1790265763840.149290703338282406; EchoGPT-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY; _ga_Z6FRNCMBFJ=GS2.1.s1790488130$o5$g1$t1790488163$j27$l0$h0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"message\": \"What is software testing?\",\r\n  \"chatId\": \"4cd612f4-b2d7-43b3-a188-be45678d385d\",\r\n  \"model\": \"echogpt\",\r\n  \"stream\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.echogpt.live/v1/chat/generate",
+          "protocol": "https",
+          "host": [
+            "api",
+            "echogpt",
+            "live"
+          ],
+          "path": [
+            "v1",
+            "chat",
+            "generate"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://api.echogpt.live/v1/chat/generate' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7' \\\r\n  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha2lidXIyMjc2QGdtYWlsLmNvbSIsInN1YiI6eyJpZCI6ImRjZWQyNTM4LTE2MGUtNDA4Ny04ZGMxLWUzYTQ0ODZkZWMwNCIsImVtYWlsIjoic2FraWJ1cjIyNzZAZ21haWwuY29tIiwiZ29vZ2xlSWQiOm51bGwsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInBpY3R1cmUiOm51bGwsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsIm9hdXRoUHJvdmlkZXJzIjpbXSwiaXNQcmVtaXVtIjoiMCIsInN1YnNjcmlwdGlvbklkIjoiMCIsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJzdWJzY3JpcHRpb25TdGF0dXMiOjAsInByZW1pdW1MaW1pdCI6MCwiZnJlZUxpbWl0IjowLCJxdW90YVdpbmRvd1N0YXJ0IjoiMjAyNi0wOS0yN1QwNzoyODozNS44OTVaIiwicXVvdGFVc2VkIjoyLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVdpbmRvd1N0YXJ0IjoiMjAyNi0wOS0yN1QwNjo1OToxNi43NDlaIiwiY29tcGFyZVVzZWQiOjEsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6WyJjaFRXZ2JwRFRTRzZ6RWZwcG5yc09GOkFQQTkxYkduWk55M2VpTEFUQUUybFEwTUFRMDJucVpPY05xaTNxbzRHcmt1MTViLTMwaU9fTTJUM1lxTEdxekI0MUQtNUVGY2pOVjM0cDFTY0Y4SklKWW1LZGdOQjJEWVRUOEdGNFFONWtTV2t6VGZ6NlNDa0NnIl0sInN0YXR1cyI6ImFjdGl2ZSIsImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTU6NTA6MjIuOTcwWiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjdUMDc6Mjg6NDUuNzMyWiJ9LCJpYXQiOjE3OTA1MjA2MjcsImV4cCI6MTc5MzExMjYyN30.kJVkEK5YN_CwT3aBCOIRUivAoly2FLptTRzzYbtWzxw' \\\r\n  -H 'content-type: application/json' \\\r\n  -b '_ga=GA1.1.2083246859.1790265763; _fbp=fb.1.1790265763840.149290703338282406; EchoGPT-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaG1hbnNha2lidXIyNzZAZ21haWwuY29tIiwic3ViIjp7ImVtYWlsIjoicmFobWFuc2FraWJ1cjI3NkBnbWFpbC5jb20iLCJnb29nbGVJZCI6IjEwODM4NjYyMjk3OTkyMzQxODI3OSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLdUE5VG5hSGU4RlM2ZXhKNjJNZFFXYy10eWhjVnNYYkRUd3VRbW5jWW9ibUk1d3dWVj1zOTYtYyIsImZpcnN0TmFtZSI6IlNha2lidXIiLCJsYXN0TmFtZSI6IlJhaG1hbiIsInN0YXR1cyI6ImFjdGl2ZSIsImdpdGh1YklkIjpudWxsLCJkaXNjY29yZElkIjpudWxsLCJ1c2VybmFtZSI6bnVsbCwiZGlzcGxheU5hbWUiOm51bGwsInN1YnNjcmlwdGlvbkV4cGlyYXRpb25EYXRlIjpudWxsLCJxdW90YVdpbmRvd1N0YXJ0IjpudWxsLCJjb21wYXJlV2luZG93U3RhcnQiOm51bGwsImlkIjoiMGIwNDgwYWItMTI2OC00NzJkLThiOGUtYTBmZTZjMGJjNzU4Iiwib2F1dGhQcm92aWRlcnMiOltdLCJpc1ByZW1pdW0iOiIwIiwic3Vic2NyaXB0aW9uSWQiOiIwIiwic3Vic2NyaXB0aW9uU3RhdHVzIjowLCJwcmVtaXVtTGltaXQiOjAsImZyZWVMaW1pdCI6MCwicXVvdGFVc2VkIjowLCJxdW90YUFkdmFuY2VkVXNlZCI6MCwiY29tcGFyZVVzZWQiOjAsInR3aXR0ZXJJZCI6IiIsImFwcGxlSWQiOiIiLCJkZXZpY2VUb2tlbiI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDktMjRUMTY6MDI6NTguMzU2WiJ9LCJpYXQiOjE3OTAyNjU3NzksImV4cCI6MTc5Mjg1Nzc3OX0.FFFah8sAdGM5xpiWBqZDA3EryTTnJXpsbwxoweI2HgY; _ga_Z6FRNCMBFJ=GS2.1.s1790488130$o5$g1$t1790488163$j27$l0$h0' \\\r\n  -H 'origin: chrome-extension://negimdcamohmoheiifgecbjgjepkcfhj' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: none' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"messageId\":\"msg_1790520681860\",\"message\":\"What is SQA?\",\"chatId\":\"790026e1-f5c7-4ac9-9299-f29b0b910afc\",\"model\":\"echogpt\",\"stream\":false}'"
+      },
+      "response": []
+    }
+  ]
+}
