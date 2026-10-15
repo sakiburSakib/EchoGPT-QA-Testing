@@ -1,0 +1,114 @@
+** Exploratory Testing Report: **
+ 
+## Testing Information
+
+| Field | Details |
+|---|---|
+| **Application** | EchoGPT – Multi AI Chat |
+| **Platforms** | Chrome Extension & Android Application |
+| **Testing Type** | Exploratory Testing |
+| **Testing Duration** | Approximately 30–60 minutes |
+| **Operating System** | Windows 10 |
+| **Browser** | Google Chrome |
+| **Android Device** | Honor 200 |
+| **Android Version** | Android 16 |
+| **Extension Version** | EchoGPT v1.0.5 |
+| **Tester** | Sakibur Rahman |
+| **Testing Date** | 27 September 2026 |
+ 
+ 
+## Testing Areas
+
+| Chrome Extension | Android Application |
+|---|---|
+| • Account registration and login | • Application launch |
+| • Google authentication | • Google authentication |
+| • Email authentication | • Email registration/login |
+| • Logout and session behavior | • OTP verification |
+| • AI model selection | • Logout |
+| • Sending messages | • AI chat |
+| • Empty messages | • Conversation context |
+| • Character-limit handling | • New Chat |
+| • Conversation context | • Chat history |
+| • New Chat | • Model switching |
+| • Chat history | • Network behavior |
+| • Settings | • Image/document features |
+| • Dark Mode | • Application reopening and persistence |
+| • Floating text actions | |
+| • Webpage/text assistance | |
+| • API request behavior | |
+
+
+** Observations: **
+
+## Authentication 
+
+• Email and Google authentication flows were explored.  
+• Different account scenarios were tested.  
+• Google account switching behavior was observed.  
+• Email OTP verification was tested on Web Extension and Android.  
+• An issue was observed where the OTP input field did not open the keyboard after 
+returning from the email application.  
+
+##AI Chat 
+
+• Basic AI conversations worked.  
+• Different AI models were explored.  
+• Character limits were tested.  
+• Special characters were tested.  
+• Conversation follow-up questions were tested.  
+• The AI did not maintain information from previous messages within the same 
+conversation.  
+
+## Chrome Extension UI
+
+• Welcome screen layout was inspected.  
+• Settings options were explored.  
+• Dark Mode availability was checked.  
+• Read a Link option sometimes did not work. 
+• Floating EchoGPT text actions were explored.  
+• Several text actions did not produce the expected change.  
+
+##Session Behavior 
+
+• Logout and reopening behavior was explored.  
+• Session persistence after logout was investigated. 
+
+** Edge Cases: **
+
+• Empty message submission  
+• Very long messages  
+• Messages containing special characters  
+• Follow-up questions using previous context  
+• Switching Google accounts  
+• Returning to the application after checking OTP  
+• Logging out and reopening the application  
+• Network-related behavior  
+• Previously deleted and re-registered accounts  
+
+** Edge Case Testing **
+
+| # | Edge Case | Observation |
+|---:|---|---|
+| 1 | Empty Message Submission | The application prevents empty message submission. |
+| 2 | 4,000-Character Message | The message is accepted successfully. |
+| 3 | 4,001-Character Message | The application prevents submission. |
+| 4 | Special Characters | The message is processed successfully. |
+| 5 | Follow-up Question | A conversation context issue was observed. |
+| 6 | Google Account Switching | An account-selection issue was observed. |
+| 7 | Logout → Reopen Application | Session behavior was investigated. |
+| 8 | OTP Verification → Leave App → Return | The keyboard failed to appear in the OTP input field. |
+| 9 | Deleted Google Account → Re-register | An authentication issue was observed. |
+| 10 | Network Interruption | Application behavior during network interruption was explored. |
+
+** Recommendations: **
+
+• Improve conversation-context handling.  
+• Make OTP verification more resilient when the user leaves and returns to the application.  
+• Provide clearer loading and error states.  
+• Improve Google account switching.  
+• Improve the organization of Settings.  
+• Improve the floating text-action experience with clear feedback.  
+• Improve the welcome-screen layout.  
+• Make the EchoGPT floating icon movable.
+• Provide an option to minimize or close the EchoGPT floating icon.
